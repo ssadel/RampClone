@@ -8,18 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		C20096812BD1850700367A71 /* RampCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096802BD1850700367A71 /* RampCloneApp.swift */; };
-		C20096832BD1850700367A71 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096822BD1850700367A71 /* ContentView.swift */; };
+		C20096832BD1850700367A71 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096822BD1850700367A71 /* MasterView.swift */; };
 		C20096852BD1850800367A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20096842BD1850800367A71 /* Assets.xcassets */; };
-		C20096892BD1850800367A71 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20096882BD1850800367A71 /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C200967D2BD1850700367A71 /* RampClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RampClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C20096802BD1850700367A71 /* RampCloneApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RampCloneApp.swift; sourceTree = "<group>"; };
-		C20096822BD1850700367A71 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		C20096822BD1850700367A71 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		C20096842BD1850800367A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C20096862BD1850800367A71 /* RampClone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RampClone.entitlements; sourceTree = "<group>"; };
-		C20096882BD1850800367A71 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,21 +50,36 @@
 		C200967F2BD1850700367A71 /* RampClone */ = {
 			isa = PBXGroup;
 			children = (
-				C20096802BD1850700367A71 /* RampCloneApp.swift */,
-				C20096822BD1850700367A71 /* ContentView.swift */,
-				C20096842BD1850800367A71 /* Assets.xcassets */,
-				C20096862BD1850800367A71 /* RampClone.entitlements */,
-				C20096872BD1850800367A71 /* Preview Content */,
+				C200968F2BD1852500367A71 /* App */,
+				C20096902BD1852800367A71 /* Assets */,
+				C20096912BD1854800367A71 /* Config */,
 			);
 			path = RampClone;
 			sourceTree = "<group>";
 		};
-		C20096872BD1850800367A71 /* Preview Content */ = {
+		C200968F2BD1852500367A71 /* App */ = {
 			isa = PBXGroup;
 			children = (
-				C20096882BD1850800367A71 /* Preview Assets.xcassets */,
+				C20096802BD1850700367A71 /* RampCloneApp.swift */,
+				C20096822BD1850700367A71 /* MasterView.swift */,
 			);
-			path = "Preview Content";
+			path = App;
+			sourceTree = "<group>";
+		};
+		C20096902BD1852800367A71 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C20096842BD1850800367A71 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C20096912BD1854800367A71 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				C20096862BD1850800367A71 /* RampClone.entitlements */,
+			);
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,7 +140,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20096892BD1850800367A71 /* Preview Assets.xcassets in Resources */,
 				C20096852BD1850800367A71 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,7 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C20096832BD1850700367A71 /* ContentView.swift in Sources */,
+				C20096832BD1850700367A71 /* MasterView.swift in Sources */,
 				C20096812BD1850700367A71 /* RampCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -266,10 +278,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RampClone/RampClone.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RampClone/Config/RampClone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RampClone/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = WF6F5UBRBL;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -282,9 +294,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -292,10 +304,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.100ideaz.RampClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,10 +317,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = RampClone/RampClone.entitlements;
+				CODE_SIGN_ENTITLEMENTS = RampClone/Config/RampClone.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"RampClone/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = WF6F5UBRBL;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
@@ -320,9 +333,9 @@
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.2;
@@ -330,10 +343,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.100ideaz.RampClone;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
