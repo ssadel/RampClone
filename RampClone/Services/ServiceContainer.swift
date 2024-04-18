@@ -11,18 +11,22 @@ final class ServiceContainer {
     static let shared: ServiceContainer = .init()
     
     let authService: AuthService
+    let cardService: CardService
+    
     let services: [Service]
     
     private let cancelBag: CancelBag = .init()
     
     private init() {
-        self.authService = .init()
+        authService = .init()
+        cardService = .init()
         
-        self.services = [
-            self.authService
+        services = [
+            authService,
+            cardService
         ]
         
-        self.observeAuthState()
+        observeAuthState()
     }
     
     func onLaunch() {

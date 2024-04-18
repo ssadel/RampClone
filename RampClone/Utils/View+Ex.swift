@@ -25,4 +25,11 @@ extension View {
                 }
             )
     }
+    
+    func applySheetStyling() -> some View {
+        self
+            .presentationDragIndicator(.visible)
+            .presentationDetents([.fraction(0.99)], selection: .constant(.fraction(0.99)))
+            .presentationCornerRadius(25)
+    }
 }

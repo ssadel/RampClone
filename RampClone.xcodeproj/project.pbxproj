@@ -21,6 +21,10 @@
 		C20096AD2BD18E1500367A71 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096AC2BD18E1500367A71 /* CancelBag.swift */; };
 		C20096AF2BD18F3000367A71 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096AE2BD18F3000367A71 /* Environment.swift */; };
 		C20096B12BD1901200367A71 /* View+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096B02BD1901200367A71 /* View+Ex.swift */; };
+		C20096B52BD193AA00367A71 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096B42BD193AA00367A71 /* DashboardViewModel.swift */; };
+		C20096B82BD1940900367A71 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096B72BD1940900367A71 /* Card.swift */; };
+		C20096BA2BD194AE00367A71 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096B92BD194AE00367A71 /* CardService.swift */; };
+		C20096BF2BD1962F00367A71 /* FetchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096BE2BD1962F00367A71 /* FetchState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +44,10 @@
 		C20096AC2BD18E1500367A71 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		C20096AE2BD18F3000367A71 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		C20096B02BD1901200367A71 /* View+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ex.swift"; sourceTree = "<group>"; };
+		C20096B42BD193AA00367A71 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		C20096B72BD1940900367A71 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		C20096B92BD194AE00367A71 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
+		C20096BE2BD1962F00367A71 /* FetchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +84,7 @@
 				C20096902BD1852800367A71 /* Assets */,
 				C20096912BD1854800367A71 /* Config */,
 				C20096922BD1877300367A71 /* Dashboard */,
+				C20096B62BD1940100367A71 /* Models */,
 				C20096A12BD189F300367A71 /* Network */,
 				C20096952BD187D900367A71 /* Services */,
 				C20096962BD187ED00367A71 /* Utils */,
@@ -114,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				C20096932BD1877F00367A71 /* DashboardView.swift */,
+				C20096B42BD193AA00367A71 /* DashboardViewModel.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -124,6 +134,7 @@
 				C20096A72BD18D3F00367A71 /* Protocols */,
 				C20096992BD188E800367A71 /* ServiceContainer.swift */,
 				C200969F2BD189E200367A71 /* AuthService.swift */,
+				C20096B92BD194AE00367A71 /* CardService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -161,6 +172,15 @@
 				C20096A82BD18D4E00367A71 /* ServiceProtocol.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C20096B62BD1940100367A71 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C20096B72BD1940900367A71 /* Card.swift */,
+				C20096BE2BD1962F00367A71 /* FetchState.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,12 +259,16 @@
 				C20096832BD1850700367A71 /* MasterView.swift in Sources */,
 				C20096A62BD18A3000367A71 /* MockAPI.swift in Sources */,
 				C20096942BD1877F00367A71 /* DashboardView.swift in Sources */,
+				C20096BA2BD194AE00367A71 /* CardService.swift in Sources */,
+				C20096BF2BD1962F00367A71 /* FetchState.swift in Sources */,
+				C20096B82BD1940900367A71 /* Card.swift in Sources */,
 				C20096812BD1850700367A71 /* RampCloneApp.swift in Sources */,
 				C200969A2BD188E800367A71 /* ServiceContainer.swift in Sources */,
 				C20096AD2BD18E1500367A71 /* CancelBag.swift in Sources */,
 				C20096A02BD189E200367A71 /* AuthService.swift in Sources */,
 				C20096A92BD18D4E00367A71 /* ServiceProtocol.swift in Sources */,
 				C20096B12BD1901200367A71 /* View+Ex.swift in Sources */,
+				C20096B52BD193AA00367A71 /* DashboardViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

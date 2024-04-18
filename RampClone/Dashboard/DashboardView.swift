@@ -19,7 +19,7 @@ struct DashboardView: View {
         .padding(.horizontal)
         .padding(.vertical)
         .background(Color.sand)
-        .presentationDragIndicator(.visible)
+        .applySheetStyling()
     }
     
     private var header: some View {
@@ -52,10 +52,12 @@ struct DashboardView: View {
             }
         }
     }
+    
+    
 }
 
 #Preview {
-    Text("")
+    Color.black.ignoresSafeArea()
         .sheet(isPresented: .constant(true), content: {
             DashboardView()
         })
