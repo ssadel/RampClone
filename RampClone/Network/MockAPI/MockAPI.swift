@@ -20,11 +20,11 @@ final class MockAPI {
     
     // Placeholder request function to simulate time passing during request
     @discardableResult
-    func request() async throws -> Any? {
-        guard let url: URL = .init(string: endpoint) else {
-            throw MockAPIError.invalidEndpoint
-        }
-        try await Task.sleep(for: .seconds(1.5))
+    func simulateRequest(seconds: TimeInterval = 1) async throws -> Any? {
+//        guard let url: URL = .init(string: endpoint) else {
+//            throw MockAPIError.invalidEndpoint
+//        }
+        try await Task.sleep(for: .seconds(seconds))
         return nil
     }
 }

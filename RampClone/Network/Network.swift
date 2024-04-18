@@ -16,5 +16,7 @@ final class Network {
         mockAPI = .init(endpoint: "https://sample_prod_endpoint.api")
     }
     
-    func onLaunch() {}
+    func onLaunch() {
+        //
+    }
 }

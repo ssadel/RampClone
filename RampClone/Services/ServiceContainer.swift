@@ -16,10 +16,15 @@ import Foundation
 final class ServiceContainer {
     static let shared: ServiceContainer = .init()
     
+    let authService: AuthService
     let services: [Service]
     
     private init() {
-        self.services = []
+        self.authService = .init()
+        
+        self.services = [
+            self.authService
+        ]
     }
     
     func onLaunch() {
