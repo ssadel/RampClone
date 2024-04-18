@@ -20,6 +20,7 @@
 		C20096A92BD18D4E00367A71 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096A82BD18D4E00367A71 /* ServiceProtocol.swift */; };
 		C20096AD2BD18E1500367A71 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096AC2BD18E1500367A71 /* CancelBag.swift */; };
 		C20096AF2BD18F3000367A71 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096AE2BD18F3000367A71 /* Environment.swift */; };
+		C20096B12BD1901200367A71 /* View+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096B02BD1901200367A71 /* View+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C20096A82BD18D4E00367A71 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		C20096AC2BD18E1500367A71 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
 		C20096AE2BD18F3000367A71 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		C20096B02BD1901200367A71 /* View+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,8 +113,7 @@
 		C20096922BD1877300367A71 /* Dashboard */ = {
 			isa = PBXGroup;
 			children = (
-				C200969B2BD188FB00367A71 /* Views */,
-				C200969C2BD1890000367A71 /* ViewModels */,
+				C20096932BD1877F00367A71 /* DashboardView.swift */,
 			);
 			path = Dashboard;
 			sourceTree = "<group>";
@@ -132,23 +133,9 @@
 			children = (
 				C20096AC2BD18E1500367A71 /* CancelBag.swift */,
 				C20096972BD187F800367A71 /* Color+Ex.swift */,
+				C20096B02BD1901200367A71 /* View+Ex.swift */,
 			);
 			path = Utils;
-			sourceTree = "<group>";
-		};
-		C200969B2BD188FB00367A71 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				C20096932BD1877F00367A71 /* DashboardView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		C200969C2BD1890000367A71 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		C20096A12BD189F300367A71 /* Network */ = {
@@ -257,6 +244,7 @@
 				C20096AD2BD18E1500367A71 /* CancelBag.swift in Sources */,
 				C20096A02BD189E200367A71 /* AuthService.swift in Sources */,
 				C20096A92BD18D4E00367A71 /* ServiceProtocol.swift in Sources */,
+				C20096B12BD1901200367A71 /* View+Ex.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
