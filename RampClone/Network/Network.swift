@@ -13,10 +13,12 @@ final class Network {
     let mockAPI: MockAPI
     
     private init() {
-        mockAPI = .init(endpoint: "https://sample_prod_endpoint.api")
+        let endpoint: String = Environment.isDebug ?
+        "https://sample_debug_endpoint.api" :
+        "https://sample_prod_endpoint.api"
+        
+        mockAPI = .init(endpoint: endpoint)
     }
     
-    func onLaunch() {
-        //
-    }
+    func onLaunch() {}
 }

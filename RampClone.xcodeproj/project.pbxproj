@@ -19,6 +19,7 @@
 		C20096A62BD18A3000367A71 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096A52BD18A3000367A71 /* MockAPI.swift */; };
 		C20096A92BD18D4E00367A71 /* ServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096A82BD18D4E00367A71 /* ServiceProtocol.swift */; };
 		C20096AD2BD18E1500367A71 /* CancelBag.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096AC2BD18E1500367A71 /* CancelBag.swift */; };
+		C20096AF2BD18F3000367A71 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096AE2BD18F3000367A71 /* Environment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C20096A52BD18A3000367A71 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 		C20096A82BD18D4E00367A71 /* ServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProtocol.swift; sourceTree = "<group>"; };
 		C20096AC2BD18E1500367A71 /* CancelBag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CancelBag.swift; sourceTree = "<group>"; };
+		C20096AE2BD18F3000367A71 /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				C20096862BD1850800367A71 /* RampClone.entitlements */,
+				C20096AE2BD18F3000367A71 /* Environment.swift */,
 			);
 			path = Config;
 			sourceTree = "<group>";
@@ -243,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C200969E2BD1895300367A71 /* AppDelegate.swift in Sources */,
+				C20096AF2BD18F3000367A71 /* Environment.swift in Sources */,
 				C20096982BD187F800367A71 /* Color+Ex.swift in Sources */,
 				C20096A32BD189FF00367A71 /* Network.swift in Sources */,
 				C20096832BD1850700367A71 /* MasterView.swift in Sources */,
