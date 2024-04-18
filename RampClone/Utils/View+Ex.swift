@@ -8,7 +8,7 @@
 import SwiftUI
 
 extension View {
-    func applyFadeOutMask(size: CGFloat = 15,
+    func applyFadeOutMask(size: CGFloat = 10,
                              edges: [VerticalEdge] = [.top, .bottom]) -> some View {
         self
             .mask(
