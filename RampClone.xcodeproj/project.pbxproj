@@ -14,6 +14,9 @@
 		C20096982BD187F800367A71 /* Color+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096972BD187F800367A71 /* Color+Ex.swift */; };
 		C200969A2BD188E800367A71 /* ServiceContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096992BD188E800367A71 /* ServiceContainer.swift */; };
 		C200969E2BD1895300367A71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200969D2BD1895300367A71 /* AppDelegate.swift */; };
+		C20096A02BD189E200367A71 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C200969F2BD189E200367A71 /* AuthService.swift */; };
+		C20096A32BD189FF00367A71 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096A22BD189FF00367A71 /* Network.swift */; };
+		C20096A62BD18A3000367A71 /* MockAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096A52BD18A3000367A71 /* MockAPI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		C20096972BD187F800367A71 /* Color+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ex.swift"; sourceTree = "<group>"; };
 		C20096992BD188E800367A71 /* ServiceContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceContainer.swift; sourceTree = "<group>"; };
 		C200969D2BD1895300367A71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C200969F2BD189E200367A71 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		C20096A22BD189FF00367A71 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		C20096A52BD18A3000367A71 /* MockAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,7 @@
 				C20096902BD1852800367A71 /* Assets */,
 				C20096912BD1854800367A71 /* Config */,
 				C20096922BD1877300367A71 /* Dashboard */,
+				C20096A12BD189F300367A71 /* Network */,
 				C20096952BD187D900367A71 /* Services */,
 				C20096962BD187ED00367A71 /* Utils */,
 			);
@@ -107,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				C20096992BD188E800367A71 /* ServiceContainer.swift */,
+				C200969F2BD189E200367A71 /* AuthService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -132,6 +140,23 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C20096A12BD189F300367A71 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C20096A22BD189FF00367A71 /* Network.swift */,
+				C20096A42BD18A2000367A71 /* MockAPI */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C20096A42BD18A2000367A71 /* MockAPI */ = {
+			isa = PBXGroup;
+			children = (
+				C20096A52BD18A3000367A71 /* MockAPI.swift */,
+			);
+			path = MockAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,10 +230,13 @@
 			files = (
 				C200969E2BD1895300367A71 /* AppDelegate.swift in Sources */,
 				C20096982BD187F800367A71 /* Color+Ex.swift in Sources */,
+				C20096A32BD189FF00367A71 /* Network.swift in Sources */,
 				C20096832BD1850700367A71 /* MasterView.swift in Sources */,
+				C20096A62BD18A3000367A71 /* MockAPI.swift in Sources */,
 				C20096942BD1877F00367A71 /* DashboardView.swift in Sources */,
 				C20096812BD1850700367A71 /* RampCloneApp.swift in Sources */,
 				C200969A2BD188E800367A71 /* ServiceContainer.swift in Sources */,
+				C20096A02BD189E200367A71 /* AuthService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
