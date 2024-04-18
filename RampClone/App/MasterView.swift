@@ -25,10 +25,16 @@ struct MasterView: View {
                         !viewModel.showDashboardViewSheet
                     }, set: {
                         viewModel.showDashboardViewSheet = !$0
-                    })
-                )
+                    }
+                ))
                 .sheet(isPresented: $viewModel.showDashboardViewSheet) {
                     DashboardView()
+                }
+                .onAppear {
+                    viewModel.showDashboardViewSheet = true
+                }
+                .onDisappear {
+                    viewModel.showDashboardViewSheet = false
                 }
             }
         }
@@ -37,7 +43,7 @@ struct MasterView: View {
 }
 
 final class MasterViewModel: ObservableObject {
-    @Published var showDashboardViewSheet: Bool = true
+    @Published var showDashboardViewSheet: Bool = false
     @Published private(set) var authState: AuthService.State
     
     private let authService: AuthService = ServiceContainer.shared.authService

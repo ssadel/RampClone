@@ -91,7 +91,7 @@ struct CardCell: View {
     
     private var background: some View {
         shape
-            .fill(.white)
+            .fill(.white.opacity(0.9))
             .shadow(color: .shadowColor, radius: 8, y: 8)
     }
     
