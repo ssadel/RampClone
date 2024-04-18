@@ -26,6 +26,7 @@
 		C20096BA2BD194AE00367A71 /* CardService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096B92BD194AE00367A71 /* CardService.swift */; };
 		C20096BF2BD1962F00367A71 /* FetchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096BE2BD1962F00367A71 /* FetchState.swift */; };
 		C20096C32BD1981A00367A71 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096C22BD1981A00367A71 /* CardCell.swift */; };
+		C20096C92BD1A2CF00367A71 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096C82BD1A2CF00367A71 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		C20096B92BD194AE00367A71 /* CardService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardService.swift; sourceTree = "<group>"; };
 		C20096BE2BD1962F00367A71 /* FetchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchState.swift; sourceTree = "<group>"; };
 		C20096C22BD1981A00367A71 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
+		C20096C82BD1A2CF00367A71 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +91,7 @@
 				C20096922BD1877300367A71 /* Dashboard */,
 				C20096B62BD1940100367A71 /* Models */,
 				C20096A12BD189F300367A71 /* Network */,
+				C20096C72BD1A2C400367A71 /* Onboarding */,
 				C20096952BD187D900367A71 /* Services */,
 				C20096962BD187ED00367A71 /* Utils */,
 			);
@@ -202,6 +205,14 @@
 			path = Card;
 			sourceTree = "<group>";
 		};
+		C20096C72BD1A2C400367A71 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				C20096C82BD1A2CF00367A71 /* LoginView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -287,6 +298,7 @@
 				C20096A02BD189E200367A71 /* AuthService.swift in Sources */,
 				C20096A92BD18D4E00367A71 /* ServiceProtocol.swift in Sources */,
 				C20096B12BD1901200367A71 /* View+Ex.swift in Sources */,
+				C20096C92BD1A2CF00367A71 /* LoginView.swift in Sources */,
 				C20096B52BD193AA00367A71 /* DashboardViewModel.swift in Sources */,
 				C20096C32BD1981A00367A71 /* CardCell.swift in Sources */,
 			);

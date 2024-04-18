@@ -9,18 +9,21 @@ import Foundation
 
 final class DashboardViewModel: ObservableObject {
     @Published private(set) var card: Card?
-    @Published private(set) var fetchCardState: FetchState = .fetching
     
     private let cardService: CardService = ServiceContainer.shared.cardService
     private let cancelBag: CancelBag = .init()
     
     init() {
-        print("\(#file): init")
+        print("DashboardViewModel init")
+        
         setupObservers()
+        Task { [weak self] in
+            await self?.fetch()
+        }
     }
     
     deinit {
-        print("\(#file): deinit")
+        print("DashboardViewModel deinit")
     }
     
     func fetch() async {
@@ -36,13 +39,6 @@ final class DashboardViewModel: ObservableObject {
             .receive(on: DispatchQueue.main)
             .sink { [weak self] card in
                 self?.card = card
-            }
-            .store(in: cancelBag)
-        
-        cardService.$fetchCardState
-            .receive(on: DispatchQueue.main)
-            .sink { [weak self] fetchState in
-                self?.fetchCardState = fetchState
             }
             .store(in: cancelBag)
     }

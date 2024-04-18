@@ -14,11 +14,13 @@ struct DashboardView: View {
         VStack(spacing: 0) {
             header
             ScrollView {
-                Text("yo")
+                card
             }
             .applyFadeOutMask()
+            .refreshable {
+                await viewModel.fetch()
+            }
         }
-        .padding(.horizontal)
         .padding(.vertical)
         .background(Color.sand)
         .applySheetStyling()
@@ -53,6 +55,20 @@ struct DashboardView: View {
                 .foregroundStyle(.black.opacity(0.4))
             }
         }
+        .padding(.horizontal)
+    }
+    
+    private var card: some View {
+        ZStack {
+            if let card = viewModel.card {
+                CardCell(card: card)
+            } else {
+                CardCell(card: .init(name: "placeholder", category: .travelAndEntertainment, amount: 0.0, monthlyLimit: 0.0))
+                    .redacted(reason: .placeholder)
+            }
+        }
+        .padding(.top, 25)
+        .padding(.horizontal)
     }
 }
 

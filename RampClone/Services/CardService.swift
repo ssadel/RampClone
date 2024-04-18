@@ -13,8 +13,8 @@ enum CardServiceError: Error {
 
 final class CardService: Service {
     @Published private(set) var card: Card?
-    @Published private(set) var fetchCardState: FetchState = .none
     
+    private var fetchCardState: FetchState = .none
     private let mockAPI: MockAPI = Network.shared.mockAPI
     
     func onLogin() {
@@ -27,12 +27,12 @@ final class CardService: Service {
 extension CardService {
     @discardableResult
     func fetchCard() async throws -> Card {
+        guard self.fetchCardState != .fetching else {
+            throw CardServiceError.alreadyFetching
+        }
         self.fetchCardState = .fetching
         defer {
             self.fetchCardState = .none
-        }
-        guard self.fetchCardState != .fetching else {
-            throw CardServiceError.alreadyFetching
         }
         try await mockAPI.simulateRequest(seconds: 0.5)
         let card: Card = .init(name: "Sid",
