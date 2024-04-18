@@ -69,6 +69,7 @@ struct DashboardView: View {
         }
         .padding(.top, 25)
         .padding(.horizontal)
+        .animation(.easeOut, value: viewModel.card == nil)
     }
 }
 

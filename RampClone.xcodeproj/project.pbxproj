@@ -28,6 +28,7 @@
 		C20096C32BD1981A00367A71 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096C22BD1981A00367A71 /* CardCell.swift */; };
 		C20096C92BD1A2CF00367A71 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096C82BD1A2CF00367A71 /* LoginView.swift */; };
 		C20096CB2BD1A33000367A71 /* ButtonStyle+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096CA2BD1A33000367A71 /* ButtonStyle+Ex.swift */; };
+		C20096CE2BD1A82500367A71 /* CaptureReciptView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096CD2BD1A82500367A71 /* CaptureReciptView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		C20096C22BD1981A00367A71 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		C20096C82BD1A2CF00367A71 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		C20096CA2BD1A33000367A71 /* ButtonStyle+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle+Ex.swift"; sourceTree = "<group>"; };
+		C20096CD2BD1A82500367A71 /* CaptureReciptView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureReciptView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 			children = (
 				C200968F2BD1852500367A71 /* App */,
 				C20096902BD1852800367A71 /* Assets */,
+				C20096CC2BD1A81200367A71 /* Capture */,
 				C20096C02BD1980A00367A71 /* Common */,
 				C20096912BD1854800367A71 /* Config */,
 				C20096922BD1877300367A71 /* Dashboard */,
@@ -216,6 +219,14 @@
 			path = Onboarding;
 			sourceTree = "<group>";
 		};
+		C20096CC2BD1A81200367A71 /* Capture */ = {
+			isa = PBXGroup;
+			children = (
+				C20096CD2BD1A82500367A71 /* CaptureReciptView.swift */,
+			);
+			path = Capture;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -285,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20096CE2BD1A82500367A71 /* CaptureReciptView.swift in Sources */,
 				C200969E2BD1895300367A71 /* AppDelegate.swift in Sources */,
 				C20096AF2BD18F3000367A71 /* Environment.swift in Sources */,
 				C20096982BD187F800367A71 /* Color+Ex.swift in Sources */,
