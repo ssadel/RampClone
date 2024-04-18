@@ -10,6 +10,8 @@
 		C20096812BD1850700367A71 /* RampCloneApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096802BD1850700367A71 /* RampCloneApp.swift */; };
 		C20096832BD1850700367A71 /* MasterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096822BD1850700367A71 /* MasterView.swift */; };
 		C20096852BD1850800367A71 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C20096842BD1850800367A71 /* Assets.xcassets */; };
+		C20096942BD1877F00367A71 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096932BD1877F00367A71 /* DashboardView.swift */; };
+		C20096982BD187F800367A71 /* Color+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096972BD187F800367A71 /* Color+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +20,8 @@
 		C20096822BD1850700367A71 /* MasterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MasterView.swift; sourceTree = "<group>"; };
 		C20096842BD1850800367A71 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C20096862BD1850800367A71 /* RampClone.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RampClone.entitlements; sourceTree = "<group>"; };
+		C20096932BD1877F00367A71 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C20096972BD187F800367A71 /* Color+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,9 @@
 				C200968F2BD1852500367A71 /* App */,
 				C20096902BD1852800367A71 /* Assets */,
 				C20096912BD1854800367A71 /* Config */,
+				C20096922BD1877300367A71 /* Dashboard */,
+				C20096952BD187D900367A71 /* Services */,
+				C20096962BD187ED00367A71 /* Utils */,
 			);
 			path = RampClone;
 			sourceTree = "<group>";
@@ -80,6 +87,29 @@
 				C20096862BD1850800367A71 /* RampClone.entitlements */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		C20096922BD1877300367A71 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				C20096932BD1877F00367A71 /* DashboardView.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		C20096952BD187D900367A71 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		C20096962BD187ED00367A71 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				C20096972BD187F800367A71 /* Color+Ex.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +181,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C20096982BD187F800367A71 /* Color+Ex.swift in Sources */,
 				C20096832BD1850700367A71 /* MasterView.swift in Sources */,
+				C20096942BD1877F00367A71 /* DashboardView.swift in Sources */,
 				C20096812BD1850700367A71 /* RampCloneApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
