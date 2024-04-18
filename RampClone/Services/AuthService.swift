@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum AuthServiceError: Error {
+    case alreadyLoggingIn
+}
+
 final class AuthService: Service {
     enum State {
         case loading
@@ -15,6 +19,8 @@ final class AuthService: Service {
     }
     
     @Published private(set) var authState: State = .loading
+    
+    private var isSigningIn: Bool = false
     private let mockAPI: MockAPI = Network.shared.mockAPI
     
     func onLaunch() {
@@ -33,5 +39,17 @@ extension AuthService {
         } catch {
             print(#function, "error: ", error)
         }
+    }
+    
+    func simulateSignIn() async throws {
+        guard !isSigningIn else {
+            throw AuthServiceError.alreadyLoggingIn
+        }
+        isSigningIn = true
+        defer {
+            isSigningIn = false
+        }
+        try await Task.sleep(for: .seconds(0.5))
+        self.authState = .authenticated
     }
 }

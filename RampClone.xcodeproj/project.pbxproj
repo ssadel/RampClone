@@ -27,6 +27,7 @@
 		C20096BF2BD1962F00367A71 /* FetchState.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096BE2BD1962F00367A71 /* FetchState.swift */; };
 		C20096C32BD1981A00367A71 /* CardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096C22BD1981A00367A71 /* CardCell.swift */; };
 		C20096C92BD1A2CF00367A71 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096C82BD1A2CF00367A71 /* LoginView.swift */; };
+		C20096CB2BD1A33000367A71 /* ButtonStyle+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = C20096CA2BD1A33000367A71 /* ButtonStyle+Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		C20096BE2BD1962F00367A71 /* FetchState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchState.swift; sourceTree = "<group>"; };
 		C20096C22BD1981A00367A71 /* CardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardCell.swift; sourceTree = "<group>"; };
 		C20096C82BD1A2CF00367A71 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C20096CA2BD1A33000367A71 /* ButtonStyle+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ButtonStyle+Ex.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +153,7 @@
 				C20096AC2BD18E1500367A71 /* CancelBag.swift */,
 				C20096972BD187F800367A71 /* Color+Ex.swift */,
 				C20096B02BD1901200367A71 /* View+Ex.swift */,
+				C20096CA2BD1A33000367A71 /* ButtonStyle+Ex.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -294,6 +297,7 @@
 				C20096B82BD1940900367A71 /* Card.swift in Sources */,
 				C20096812BD1850700367A71 /* RampCloneApp.swift in Sources */,
 				C200969A2BD188E800367A71 /* ServiceContainer.swift in Sources */,
+				C20096CB2BD1A33000367A71 /* ButtonStyle+Ex.swift in Sources */,
 				C20096AD2BD18E1500367A71 /* CancelBag.swift in Sources */,
 				C20096A02BD189E200367A71 /* AuthService.swift in Sources */,
 				C20096A92BD18D4E00367A71 /* ServiceProtocol.swift in Sources */,
