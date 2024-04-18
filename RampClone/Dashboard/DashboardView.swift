@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct DashboardView: View {
+    @StateObject private var viewModel: DashboardViewModel = .init()
+    
     var body: some View {
         VStack(spacing: 0) {
             header
@@ -29,7 +31,7 @@ struct DashboardView: View {
                 .foregroundStyle(.black.opacity(0.175))
             HStack {
                 Text("My Ramp")
-                    .font(.title.weight(.bold))
+                    .font(.title2.weight(.bold))
                 Spacer()
                 HStack(spacing: 15) {
                     Button {
@@ -52,8 +54,6 @@ struct DashboardView: View {
             }
         }
     }
-    
-    
 }
 
 #Preview {
