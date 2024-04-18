@@ -11,14 +11,14 @@ struct CardCell: View {
     var card: Card
     private let aspectRatio: CGFloat = 1.586
     private var shape: RoundedRectangle {
-        RoundedRectangle(cornerRadius: 12, style: .continuous)
+        RoundedRectangle(cornerRadius: 10, style: .continuous)
     }
     
     var body: some View {
         GeometryReader { geo in
             VStack(alignment: .leading) {
                 top
-                Spacer()
+                chipImage(geo)
                 bottom(geo)
             }
         }
@@ -38,6 +38,16 @@ struct CardCell: View {
         }
         .foregroundStyle(.black.opacity(0.3))
         .padding()
+    }
+    
+    private func chipImage(_ geo: GeometryProxy) -> some View {
+        Image(.chip)
+            .resizable()
+            .scaledToFit()
+            .frame(height: geo.size.height / 4)
+            .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .trailing)
+            .padding(.trailing, geo.size.width * 0.075)
+            .opacity(0.5)
     }
     
     private func bottom(_ geo: GeometryProxy) -> some View {
